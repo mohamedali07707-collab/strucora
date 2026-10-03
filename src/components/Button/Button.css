@@ -1,0 +1,119 @@
+/* BUTTON — premium architectural feel */
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+  border: 1px solid transparent;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn--lg {
+  padding: 18px 28px;
+  font-size: 15px;
+}
+
+.btn--sm {
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+/* PRIMARY — dark olive */
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-warm-bg);
+  border-color: var(--color-primary);
+}
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -12px rgba(16, 19, 16, 0.45);
+}
+.btn--primary:hover .btn__arrow {
+  transform: translateX(6px);
+}
+
+/* SECONDARY — outlined */
+.btn--secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn--secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-warm-bg);
+  transform: translateY(-2px);
+}
+.btn--secondary:hover .btn__arrow {
+  transform: translateX(6px);
+}
+
+/* GHOST — text + arrow */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  padding: 6px 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-primary);
+}
+.btn--ghost:hover {
+  color: var(--color-secondary-olive);
+}
+.btn--ghost:hover .btn__arrow {
+  transform: translateX(6px);
+}
+
+/* ON DARK SURFACE */
+.btn--inverse {
+  background: var(--color-warm-bg);
+  color: var(--color-primary);
+  border-color: var(--color-warm-bg);
+}
+.btn--inverse:hover {
+  background: var(--color-pure-white);
+  transform: translateY(-2px);
+}
+.btn--inverse:hover .btn__arrow {
+  transform: translateX(6px);
+}
+
+/* ARROW */
+.btn__arrow {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+[dir="rtl"] .btn__arrow[data-dir="right"] {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .btn__arrow[data-dir="left"] {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .btn:hover .btn__arrow {
+  transform: scaleX(-1) translateX(6px);
+}
+
+/* ICON-ONLY */
+.btn--icon {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+}

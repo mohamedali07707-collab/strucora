@@ -1,0 +1,77 @@
+/*
+ * STRUCORA — DESIGN TOKENS
+ * ------------------------------------
+ * Centralized design variables for the entire website.
+ * All colors, typography, radii, and spacing should be consumed from here.
+ * This file is loaded directly by index.html as CSS custom properties.
+ */
+
+:root {
+  /* PRIMARY PALETTE — Dark Olive */
+  --color-primary: #26382a;
+  --color-primary-hover: #1f2f23;
+  --color-secondary-olive: #344936;
+  --color-muted-olive: #445a43;
+
+  /* LIGHT SURFACES — Warm Whites */
+  --color-warm-bg: #f7f7f3;
+  --color-warm-white: #f1f2ec;
+  --color-pure-white: #ffffff;
+
+  /* DARK SURFACES */
+  --color-deep-charcoal: #101310;
+  --color-soft-charcoal: #1a1f1b;
+
+  /* NEUTRALS */
+  --color-concrete: #d8d8d1;
+  --color-concrete-soft: #e6e6e0;
+  --color-line: rgba(38, 56, 42, 0.16);
+  --color-line-light: rgba(38, 56, 42, 0.08);
+  --color-line-strong: rgba(38, 56, 42, 0.32);
+
+  /* TYPOGRAPHY */
+  --font-sans: "Manrope", "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-ar: "IBM Plex Sans Arabic", "Noto Sans Arabic", sans-serif;
+
+  /* TYPE SCALE */
+  --fs-hero: clamp(56px, 7vw, 110px);
+  --fs-section: clamp(34px, 5vw, 72px);
+  --fs-statement: clamp(24px, 3vw, 44px);
+  --fs-lead: clamp(18px, 1.4vw, 22px);
+  --fs-body: clamp(15px, 1vw, 18px);
+  --fs-meta: 11px;
+
+  /* RADII */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+
+  /* SPACING SCALE (8px base) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 80px;
+  --space-8: 96px;
+  --space-9: 120px;
+  --space-10: 160px;
+
+  /* LAYOUT */
+  --container-max: 1440px;
+  --container-pad: clamp(20px, 4vw, 56px);
+
+  /* MOTION */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 220ms;
+  --dur-base: 380ms;
+  --dur-slow: 700ms;
+
+  /* Z-INDEX */
+  --z-header: 80;
+  --z-menu: 90;
+  --z-modal: 100;
+}

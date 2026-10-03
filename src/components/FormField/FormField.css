@@ -1,0 +1,90 @@
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  opacity: 0.7;
+}
+
+html[lang="ar"] .field__label {
+  letter-spacing: 0.02em;
+}
+
+.field__req {
+  margin-inline-start: 4px;
+  color: var(--color-primary);
+  opacity: 0.6;
+}
+
+.field__input {
+  width: 100%;
+  background: transparent;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-primary);
+  border: 0;
+  border-bottom: 1px solid var(--color-line);
+  border-radius: 0;
+  transition: border-color var(--dur-base) var(--ease-out);
+  font-family: inherit;
+}
+
+textarea.field__input {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.field__input::placeholder {
+  color: var(--color-primary);
+  opacity: 0.35;
+}
+
+.field__input:focus {
+  border-bottom-color: var(--color-primary);
+  outline: 0;
+}
+
+.field__line {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--dur-base) var(--ease-out);
+  pointer-events: none;
+}
+
+[dir="rtl"] .field__line {
+  transform-origin: right center;
+}
+
+.field__input:focus + .field__line {
+  transform: scaleX(1);
+}
+
+.field.is-error .field__input {
+  border-bottom-color: #a3402b;
+}
+
+.field.is-error .field__line {
+  background: #a3402b;
+  transform: scaleX(1);
+}
+
+.field__error {
+  font-size: 12px;
+  color: #a3402b;
+  letter-spacing: 0.02em;
+}

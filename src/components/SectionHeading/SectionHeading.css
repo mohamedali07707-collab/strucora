@@ -1,0 +1,23 @@
+.section-heading {
+  font-size: var(--fs-section);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.section-heading--light {
+  color: var(--color-warm-bg);
+}
+
+.section-heading__line {
+  display: block;
+  overflow: hidden;
+}
+
+@media (max-width: 720px) {
+  .section-heading {
+    letter-spacing: -0.02em;
+  }
+}

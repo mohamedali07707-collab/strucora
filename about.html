@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about STRUCORA, an architecture and construction company in Iraq." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/globals.css" />
+    <link rel="stylesheet" href="./src/components/SectionHeading/SectionHeading.css" />
+    <link rel="stylesheet" href="./src/components/SectionLabel/SectionLabel.css" />
+    <link rel="stylesheet" href="./src/components/Button/Button.css" />
+    <link rel="stylesheet" href="./src/components/ImageReveal/ImageReveal.css" />
+    <link rel="stylesheet" href="./src/components/LanguageSwitcher/LanguageSwitcher.css" />
+    <link rel="stylesheet" href="./src/components/Header/Header.css" />
+    <link rel="stylesheet" href="./src/components/Footer/Footer.css" />
+    <link rel="stylesheet" href="./src/pages/About/About.css" />
+    <title>About STRUCORA — Architecture &amp; Construction</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a href="./index.html" class="site-header__brand" aria-label="STRUCORA home"><span class="site-header__logo">STRUCORA</span><span class="site-header__sub">Construction / Architecture</span></a>
+        <nav class="site-header__nav" aria-label="Primary">
+          <a href="./index.html" class="site-header__link"><span>Home</span></a>
+          <a href="./about.html" class="site-header__link is-active" aria-current="page"><span>About</span></a>
+          <a href="./projects.html" class="site-header__link"><span>Projects</span></a>
+          <a href="./contact.html" class="site-header__link"><span>Contact</span></a>
+        </nav>
+        <div class="site-header__actions">
+          <button type="button" class="lang-switch" data-language-toggle aria-label="Switch to Arabic"><span class="lang-switch__opt is-active">EN</span><span class="lang-switch__sep">/</span><span class="lang-switch__opt">AR</span></button>
+          <a class="btn btn--primary btn--sm site-header__cta" data-whatsapp href="https://wa.me/9647701234567"><span class="btn__label">Start a Project</span></a>
+          <button type="button" class="site-header__menu-btn" data-menu-open aria-label="Open menu" aria-expanded="false"><span class="site-header__menu-bar"></span><span class="site-header__menu-bar"></span></button>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__top container"><a href="./index.html" class="site-header__brand"><span class="site-header__logo">STRUCORA</span></a><button type="button" class="mobile-menu__close" data-menu-close aria-label="Close menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button></div>
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <a href="./index.html" class="mobile-menu__link" style="--i:0"><span class="mobile-menu__link-num">01</span><span class="mobile-menu__link-label">Home</span></a>
+        <a href="./about.html" class="mobile-menu__link is-active" style="--i:1"><span class="mobile-menu__link-num">02</span><span class="mobile-menu__link-label">About</span></a>
+        <a href="./projects.html" class="mobile-menu__link" style="--i:2"><span class="mobile-menu__link-num">03</span><span class="mobile-menu__link-label">Projects</span></a>
+        <a href="./contact.html" class="mobile-menu__link" style="--i:3"><span class="mobile-menu__link-num">04</span><span class="mobile-menu__link-label">Contact</span></a>
+      </nav>
+      <div class="mobile-menu__bottom container"><button type="button" class="lang-switch" data-language-toggle aria-label="Switch to Arabic"><span class="lang-switch__opt is-active">EN</span><span class="lang-switch__sep">/</span><span class="lang-switch__opt">AR</span></button><a class="btn btn--primary btn--md mobile-menu__cta" data-whatsapp href="https://wa.me/9647701234567"><span class="btn__label">Start a Project</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></a><div class="mobile-menu__meta"><span>hello@strucora.site</span><span>+964 770 123 4567</span></div></div>
+    </div>
+
+    <main>
+      <section class="about-hero"><div class="container about-hero__grid"><div class="about-hero__content">
+        <div class="section-label"><span class="section-label__dot" aria-hidden="true"></span><span class="section-label__text" data-i18n="about.hero.label">ABOUT / THE COMPANY</span></div>
+        <h1 class="about-hero__heading" data-i18n="about.hero.heading" data-i18n-lines="about-hero__heading-line"><span class="about-hero__heading-line">BUILT ON</span><span class="about-hero__heading-line">PRECISION.</span></h1>
+        <p class="about-hero__text" data-i18n="about.hero.text">STRUCORA is a modern construction and architecture company focused on thoughtful design, disciplined execution, and lasting quality.</p>
+      </div><div class="reveal is-visible"><div class="img-reveal" style="aspect-ratio:3 / 2" data-visible="true"><div class="img-reveal__mask"></div><div class="img-reveal__inner"><div class="img-reveal__placeholder"><span class="img-reveal__placeholder-label">IMAGE PLACEHOLDER</span><span class="img-reveal__placeholder-sub">3 / 2</span></div></div></div></div></div></section>
+
+      <section class="about-intro section"><div class="container about-intro__grid"><div class="about-intro__left">
+        <div class="section-label"><span class="section-label__dot" aria-hidden="true"></span><span class="section-label__text" data-i18n="about.intro.label">ABOUT STRUCORA</span></div>
+        <h2 class="section-heading about-intro__heading" data-i18n="about.intro.heading" data-i18n-lines="section-heading__line"><span class="section-heading__line">A STUDIO WHERE</span><span class="section-heading__line">VISION MEETS STRUCTURE.</span></h2>
+      </div><p class="about-intro__text" data-i18n="about.intro.text">STRUCORA brings together architects, engineers, project managers, and construction specialists under one disciplined workflow. We believe clarity at the planning stage is the foundation of every successful build.</p></div></section>
+
+      <section class="about-story section"><div class="container about-story__grid"><div class="about-story__media"><div class="img-reveal" style="aspect-ratio:9 / 7" data-visible="true"><div class="img-reveal__mask"></div><div class="img-reveal__inner"><div class="img-reveal__placeholder"><span class="img-reveal__placeholder-label">IMAGE PLACEHOLDER</span><span class="img-reveal__placeholder-sub">9 / 7</span></div></div></div></div><div class="about-story__body">
+        <div class="section-label"><span class="section-label__dot" aria-hidden="true"></span><span class="section-label__text" data-i18n="about.story.label">OUR STORY</span></div>
+        <h2 class="section-heading about-story__heading" data-i18n="about.story.heading" data-i18n-lines="section-heading__line"><span class="section-heading__line">A CLEARER WAY TO BUILD.</span></h2>
+        <p class="about-story__text" data-i18n="about.story.text">We believe strong projects are created when design, engineering, construction, and communication work as one system. STRUCORA was built around this principle — combining creative thinking with disciplined execution to create spaces that perform as well as they look.</p>
+      </div></div></section>
+
+      <section class="about-values section"><div class="container"><div class="about-values__head">
+        <div class="section-label"><span class="section-label__dot" aria-hidden="true"></span><span class="section-label__text" data-i18n="about.values.label">VALUES</span></div>
+        <h2 class="section-heading about-values__heading" data-i18n="about.values.heading" data-i18n-lines="section-heading__line"><span class="section-heading__line">PRINCIPLES THAT GUIDE</span><span class="section-heading__line">EVERY DECISION.</span></h2>
+      </div><ul class="about-values__list">
+        <li class="about-values__item"><div class="about-values__num">01</div><div class="about-values__title" data-value-title="precision">PRECISION</div><div class="about-values__desc" data-value-description="precision">Every measurement, drawing, and decision is reviewed with discipline.</div></li>
+        <li class="about-values__item"><div class="about-values__num">02</div><div class="about-values__title" data-value-title="integrity">INTEGRITY</div><div class="about-values__desc" data-value-description="integrity">We work with honesty, clarity, and long-term responsibility.</div></li>
+        <li class="about-values__item"><div class="about-values__num">03</div><div class="about-values__title" data-value-title="craftsmanship">CRAFTSMANSHIP</div><div class="about-values__desc" data-value-description="craftsmanship">We respect materials, detailing, and the people who build them.</div></li>
+        <li class="about-values__item"><div class="about-values__num">04</div><div class="about-values__title" data-value-title="innovation">INNOVATION</div><div class="about-values__desc" data-value-description="innovation">We explore modern methods without abandoning fundamentals.</div></li>
+        <li class="about-values__item"><div class="about-values__num">05</div><div class="about-values__title" data-value-title="responsibility">RESPONSIBILITY</div><div class="about-values__desc" data-value-description="responsibility">Every project is a commitment to clients, teams, and context.</div></li>
+      </ul></div></section>
+
+      <section class="about-approach section"><div class="container about-approach__grid"><div class="about-approach__head">
+        <div class="section-label"><span class="section-label__dot" aria-hidden="true"></span><span class="section-label__text" data-i18n="about.approach.label">APPROACH</span></div>
+        <h2 class="section-heading about-approach__heading" data-i18n="about.approach.heading" data-i18n-lines="section-heading__line"><span class="section-heading__line">PLANNING IS HALF THE BUILD.</span></h2>
+      </div><p class="about-approach__text" data-i18n="about.approach.text">We invest heavily in the planning stage because we know it determines quality, cost, and timing downstream. Clear drawings, clear coordination, and clear communication are non-negotiable.</p><div class="about-approach__media"><div class="img-reveal" style="aspect-ratio:4 / 3" data-visible="true"><div class="img-reveal__mask"></div><div class="img-reveal__inner"><div class="img-reveal__placeholder"><span class="img-reveal__placeholder-label">IMAGE PLACEHOLDER</span><span class="img-reveal__placeholder-sub">4 / 3</span></div></div></div></div></div></section>
+
+      <section class="about-cta section"><div class="container about-cta__inner"><span class="about-cta__label">/ NEXT STEP</span>
+        <h2 class="section-heading section-heading--light about-cta__heading" data-i18n="about.cta.heading" data-i18n-lines="section-heading__line"><span class="section-heading__line">LET'S BUILD</span><span class="section-heading__line">WITH PURPOSE.</span></h2>
+        <p class="about-cta__text" data-i18n="about.cta.text">Talk to us about your project and we'll start shaping the first step.</p>
+        <a class="btn btn--inverse btn--lg" data-whatsapp href="https://wa.me/9647701234567"><span class="btn__label" data-i18n="about.cta.button">Start a Project</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></a>
+      </div></section>
+    </main>
+
+    <footer class="site-footer noise"><div class="container"><div class="site-footer__top"><h2 class="site-footer__statement" data-i18n="footer.statement">BUILT TO LAST.</h2></div><div class="site-footer__grid">
+      <div class="site-footer__col site-footer__col--brand"><a href="./index.html" class="site-footer__logo">STRUCORA</a><p class="site-footer__tagline">STRUCORA is a modern construction and architecture company focused on thoughtful design, disciplined execution, and lasting quality.</p><div class="site-footer__lang"><button type="button" class="lang-switch lang-switch--inverse" data-language-toggle aria-label="Switch to Arabic"><span class="lang-switch__opt is-active">EN</span><span class="lang-switch__sep">/</span><span class="lang-switch__opt">AR</span></button></div></div>
+      <div class="site-footer__col"><div class="site-footer__heading" data-i18n="footer.col.nav">Navigation</div><ul class="site-footer__list"><li><a href="./index.html" class="site-footer__link" data-i18n="nav.home">Home</a></li><li><a href="./about.html" class="site-footer__link" data-i18n="nav.about">About</a></li><li><a href="./projects.html" class="site-footer__link" data-i18n="nav.projects">Projects</a></li><li><a href="./contact.html" class="site-footer__link" data-i18n="nav.contact">Contact</a></li></ul></div>
+      <div class="site-footer__col"><div class="site-footer__heading" data-i18n="footer.col.services">Services</div><ul class="site-footer__list"><li><span class="site-footer__link" data-localized="Architecture|الهندسة المعمارية">Architecture</span></li><li><span class="site-footer__link" data-localized="Construction|الإنشاءات">Construction</span></li><li><span class="site-footer__link" data-localized="Interior Development|تطوير المساحات الداخلية">Interior Development</span></li><li><span class="site-footer__link" data-localized="Project Management|إدارة المشاريع">Project Management</span></li></ul></div>
+      <div class="site-footer__col"><div class="site-footer__heading" data-i18n="footer.col.contact">Contact</div><ul class="site-footer__list site-footer__list--contact"><li><a href="mailto:hello@strucora.site" class="site-footer__link">hello@strucora.site</a></li><li><a href="tel:+9647701234567" class="site-footer__link">+964 770 123 4567</a></li><li><a data-whatsapp href="https://wa.me/9647701234567" target="_blank" rel="noreferrer" class="site-footer__link">WhatsApp</a></li><li><a href="https://instagram.com/strucora.site" target="_blank" rel="noreferrer" class="site-footer__link">Instagram</a></li><li><a href="https://facebook.com/strucora.site" target="_blank" rel="noreferrer" class="site-footer__link">Facebook</a></li></ul></div>
+    </div><div class="site-footer__bottom"><span data-i18n="footer.copy">© 2026 STRUCORA. All rights reserved.</span><span class="site-footer__bottom-meta" data-localized="Baghdad, Iraq|بغداد، العراق">Baghdad, Iraq</span></div></div></footer>
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <script>window.Strucora = {};</script>
+    <script src="./src/data/translations.js"></script>
+    <script src="./src/data/company.js"></script>
+    <script src="./src/data/team.js"></script>
+    <script src="./src/interactions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.counter {
+  display: inline-flex;
+  align-items: baseline;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+.counter__num {
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: inherit;
+}
+
+.counter__suffix {
+  font-size: clamp(22px, 2.6vw, 36px);
+  font-weight: 500;
+  margin-inline-start: 4px;
+  opacity: 0.9;
+}
